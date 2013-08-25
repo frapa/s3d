@@ -38,7 +38,7 @@ means complete. The first semi-stable release will come in some time.
 However the very basic functions are already working.
 
 If you find bugs, I will be very welcome if you can send me an e-mail
-(francescopasa<at>gmail<dot>com).
+(francescopasa-at-gmail-dot-com).
 
 ## Building
 
@@ -70,5 +70,5 @@ on my linux machine.
 
 ## Contact
 
-If you wish to contact me for any reason, write me at francescopasa<at>gmail<dot>com.
+If you wish to contact me for any reason, write me at francescopasa-at-gmail-dot-com.
 I will be very pleased o answer you.
