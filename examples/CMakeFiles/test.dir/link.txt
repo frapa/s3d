@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/test.dir/test.cpp.o  -o test -rdynamic ../build/libs3d.so -lGLEW -lGL -lsfml-window -lsfml-system -Wl,-rpath,/home/francesco/Programming/C++/libraries/s3d/build 
