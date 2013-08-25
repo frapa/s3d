@@ -1,29 +1,22 @@
 #include <GL/glew.h>
 #include <SFML/Window.hpp>
-#include "shader.hpp"
-#include "matrix.hpp"
-#include "indexed_list.hpp"
+#include "s3d.hpp"
 
 int main()
 {
     sf::Window window(sf::VideoMode(800, 600), "S3d Test");
 
-    glewInit();
-
-    if (!GLEW_VERSION_2_0) {
-        std::cerr << "This program need at least OpenGL 2.0, which is not available." << std::endl;
-        return 1;
-    }
+    s3d::init();
 
     s3d::ShaderProgram sp("shaders/test.vert", "shaders/test.frag");
     sp.use();
 
-    s3d::Matrix4 projection = s3d::createProjectionMatrix(60, 600.0/800.0, 0.1, 100);
-    sp.setUniform("projection", projection);
-    s3d::Matrix4 view;
-    view.translate(0, -2, 5);
-    view.rotateX(s3d::degToRad(-20));
-    sp.setUniform("view", view);
+	s3d::Scene scene;
+	scene.projection = s3d::createProjectionMatrix(60, 600.0/800.0, 0.1, 100);
+    scene.view.translate(0, -2, 5);
+    scene.view.rotateX(s3d::degToRad(-20));
+
+    scene.loadMatrices();
 
 	s3d::IndexedList il(GL_TRIANGLES);
 	il.appendVertex(s3d::Vertex(1, 0, 0, s3d::Color(1, 0, 0)));
@@ -39,13 +32,6 @@ int main()
 	il.model_matrix.rotateY(s3d::degToRad(-45));
 
     glClearColor(0.3f, 0.3f, 0.3f, 1.0f);
-
-    glEnable(GL_DEPTH_TEST);
-	glDepthFunc(GL_LESS);
-
-	glEnable(GL_CULL_FACE);
-	glCullFace(GL_BACK);
-	glFrontFace(GL_CCW);
 
     int c = 0;
     bool done = false;

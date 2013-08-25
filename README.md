@@ -51,7 +51,7 @@ and type:
 
     cmake .
 
-Once done (ignore the error message) type:
+Once done type:
 
     make
 
