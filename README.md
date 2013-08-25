@@ -18,7 +18,7 @@ fashion):
    graphic card and to draw it for you.
  * __Easy to use__: S3D will say out of your way and help you just
    get the work done. There is no need of complicated libraries.
- * __Small__: Just 18.5 KB for the source archive!
+ * __Small__: Just 12.1 KB for the source archive!
 
 ## Limitations
 
