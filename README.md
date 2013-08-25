@@ -55,8 +55,15 @@ Once done type:
 
     make
 
-In the build directory you will find a shared lib named libs3d and a test program
-called test (tons of imagination).
+In the build directory you will find a shared library named libs3d (the extension
+is .so on Linux and .ddl on Windows) and a static library, also called libs3d
+(with extension .a on Linux and .lib on windows).
+
+There is also a small test program called test (tons of imagination) in the
+examples folder. To run it, type, from the root directory (otherwise it will
+fail loading the shaders):
+
+	./examples/test
 
 The build system should be cross-platform but everything has been tested only
 on my linux machine.
