@@ -6,5 +6,5 @@ include_directories(include build)
 
 add_definitions(-std=c++11)
 
-add_subdirectory(src build)
+add_subdirectory(src bin)
 add_subdirectory(examples)

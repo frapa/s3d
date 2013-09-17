@@ -46,16 +46,16 @@ I'm not an expert in using Cmake, but i've found it to be a nice build system.
 For now there is no option for installing the library, you can just build
 it (and then you can place the files manually where you need them).
 
-Decompress the archive, then with the command line enter the root directory
-and type:
+Decompress the archive, then with the command line enter the build directory
+just under the root folder and type:
 
-    cmake .
+    cmake ..
 
 Once done type:
 
     make
 
-In the build directory you will find a shared library named libs3d (the extension
+In the bin directory you will find a shared library named libs3d (the extension
 is .so on Linux and .ddl on Windows) and a static library, also called libs3d
 (with extension .a on Linux and .lib on windows).
 
@@ -71,4 +71,4 @@ on my linux machine.
 ## Contact
 
 If you wish to contact me for any reason, write me at francescopasa-at-gmail-dot-com.
-I will be very pleased o answer you.
+I will be very pleased to answer you.
