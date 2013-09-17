@@ -68,6 +68,10 @@ fail loading the shaders):
 The build system should be cross-platform but everything has been tested only
 on my linux machine.
 
+To build the reference documentation with Doxygen, just type:
+
+	make doc
+
 ## Contact
 
 If you wish to contact me for any reason, write me at francescopasa-at-gmail-dot-com.

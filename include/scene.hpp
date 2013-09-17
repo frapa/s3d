@@ -9,6 +9,9 @@
 
 namespace s3d {
 
+	/** \brief Simple scene with some graphics
+	 *
+	 */
 	class Scene {
 	public:
 		Matrix4 projection;
